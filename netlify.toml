@@ -1,0 +1,17 @@
+# Netlify Functions Configuration
+
+# This directory will contain our serverless functions
+[functions]
+  directory = "netlify/functions"
+  
+[build]
+  publish = "."
+  command = ""
+
+# Environment variables will be set in the Netlify dashboard
+# DO NOT add actual API keys here - this is just for documentation
+[build.environment]
+  # These will be replaced with actual values in the Netlify dashboard
+  BINANCE_API_KEY = "your_api_key_here"
+  # The secret should never be exposed in client-side code
+  # It will only be accessible in serverless functions

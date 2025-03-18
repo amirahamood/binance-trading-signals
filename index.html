@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Trading Signals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Binance Trading Signals</h1>
+            <p class="subtitle">Simple trading signals with entry, take profit, and stop loss levels</p>
+        </header>
+        
+        <div class="controls">
+            <div class="filters">
+                <select id="asset-filter">
+                    <option value="all">All Assets</option>
+                    <option value="USDT">USDT Pairs</option>
+                    <option value="BTC">BTC Pairs</option>
+                    <option value="ETH">ETH Pairs</option>
+                    <option value="BNB">BNB Pairs</option>
+                </select>
+                <select id="signal-type">
+                    <option value="all">All Signals</option>
+                    <option value="buy">Buy Signals</option>
+                    <option value="sell">Sell Signals</option>
+                </select>
+                <select id="timeframe">
+                    <option value="15m">15 Minutes</option>
+                    <option value="1h">1 Hour</option>
+                    <option value="4h" selected>4 Hours</option>
+                    <option value="1d">1 Day</option>
+                </select>
+            </div>
+            <button id="refresh-btn" class="refresh-button">Refresh Signals</button>
+        </div>
+        
+        <div class="loading-indicator" id="loading">
+            <div class="spinner"></div>
+            <p>Generating signals...</p>
+        </div>
+        
+        <div class="signals-container" id="signals-list">
+            <!-- Signals will be populated here by JavaScript -->
+        </div>
+    </div>
+    
+    <script src="binance-integration.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "binance-trading-signals",
+  "version": "1.0.0",
+  "description": "Trading signals app with Binance API integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.0.0"
+  }
+}
